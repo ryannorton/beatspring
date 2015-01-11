@@ -1,0 +1,1 @@
+web: gunicorn beatspring.wsgi --log-file -
