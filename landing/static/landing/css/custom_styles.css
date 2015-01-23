@@ -1,0 +1,189 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  text-decoration: underline;
+    color: #333;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #fff;
+  margin: 2em;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+
+  font-family: 'Open Sans' sans-serif;
+  text-shadow: none; 
+}
+
+body {
+  color: #fff;
+  text-align: center;
+
+}
+
+.home-style{
+  background-image: url("../img/bg.png");
+  background-size: cover;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+/*
+ * Header
+ */
+ 
+.masthead {
+    position: relative;
+    top: 0;
+    margin: 0 auto;
+}
+ 
+.masthead-brand {
+
+	top:0;
+	img{
+			width: 100%;		
+	}
+}
+
+
+@media (min-width: 768px) {
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #333;
+  background-color: rgba(255,255,255,.8);
+  width: 100%;
+  position: fixed;
+  padding-top: 1em;
+  bottom: 0;
+  a:link {
+	  color: #333;
+	  text-decoration: underline;
+  }
+}
+
+
+/*
+ * Affix and center
+ */
+ 
+ 
+ 
+/*
+ * Mailer
+ */
+ 
+ .input-group {
+	margin: 0 auto;
+	border-bottom-width: 2px;
+	border-bottom-color: #fff;
+ }
+ 
+.input-group-addon{
+	background: transparent;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	border-bottom: 0;
+	border-radius: 0;
+
+
+}
+
+.form-control {
+	background: transparent;
+	border-top: transparent;
+	box-shadow: 0px 0px 0px 0px black;
+	border-left: 0;
+	border-right: 0;
+	border-radius: 0;
+	font-size: 24px;
+	color: #fff;
+	height: 48px;
+	margin: 0px auto;
+	text-align: center;
+ }
+ 
+.glyphicon {
+	color: #fff;
+}
+
+#mc_embed_signup{
+	margin-top: 6em;
+}
+
+@media (min-width: 768px) {
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .cover-container {
+    width: 95%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .cover-container {
+	  width: 50%;
+  }
+}
